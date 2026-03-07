@@ -7,7 +7,7 @@ import Link from "next/link"; export default function Home() {
       date: "2026-03-06",
       category: "耳鼻喉專科",
       readTime: "8 min read",
-      slug: "/posts/biologics-crswnp"
+      slug: "/posts/2026-03-06-biologics-crswnp"
     },
     {
       title: "頭頸部超音波導引穿刺：非侵入性診斷的新標準",

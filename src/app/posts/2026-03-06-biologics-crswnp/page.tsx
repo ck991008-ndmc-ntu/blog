@@ -12,9 +12,11 @@ export default function BlogPost() {
                     </Link>
 
                     <header className="mb-8 border-b border-gray-100 pb-8">
-                        <div className="flex items-center gap-3 text-sm text-gray-500 mb-4">
+                        <div className="flex items-center gap-3 text-sm text-gray-500 mb-4 flex-wrap">
                             <span className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-bold shadow-sm">耳鼻喉專科</span>
                             <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full font-bold shadow-sm">最新指引</span>
+                            <span className="bg-purple-50 text-purple-700 px-3 py-1 rounded-full font-bold shadow-sm">#鼻竇炎</span>
+                            <span className="bg-purple-50 text-purple-700 px-3 py-1 rounded-full font-bold shadow-sm">#生物製劑</span>
                             <time>2026-03-06</time>
                             <span>· 8 min read</span>
                         </div>

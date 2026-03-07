@@ -22,7 +22,7 @@ export default function AboutPage() {
                                     className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <p className="text-white text-sm font-medium">✨ 實習第一名獲獎留影</p>
+                                    <p className="text-white text-sm font-medium">實習第一名獲獎留影</p>
                                 </div>
                             </div>
                         </div>
