@@ -1,6 +1,12 @@
 import Sidebar from "@/components/Sidebar";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "精準醫療時代：2026 最新指引解構——生物製劑在慢性鼻竇炎與鼻息肉的應用策略",
+    description: "慢性鼻竇炎合併鼻息肉（CRSwNP）常因極高的復發率讓患者苦不堪言。隨著 ARIA-Italy 最新共識指引的發布，第二型發炎反應的「標靶治療」正全面顛覆傳統的處置邏輯，為難治型患者帶來新契機。",
+};
 
 export default function BlogPost() {
     return (

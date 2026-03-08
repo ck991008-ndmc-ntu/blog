@@ -3,6 +3,12 @@ import Sidebar from "@/components/Sidebar";
 import Link from "next/link";
 import { ArrowLeft, Clock, Activity, ChevronRight } from "lucide-react";
 import { posts } from "@/data/posts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "常常覺得累？從抽血數值看甲狀腺低下與慢性疲勞症候群",
+    description: "明明睡很久卻還是極度疲勞？不要只驗肝功能。本文帶您看懂 TSH 與 Free T4 抽血報告，秒懂「亞臨床甲狀腺低下」與「臨床甲狀腺低下」的差異與治療時機。",
+};
 
 export default function BlogPost() {
     const currentPost = posts.find(p => p.slug === "2026-03-08-hypothyroidism");

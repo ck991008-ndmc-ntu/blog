@@ -2,6 +2,12 @@ import Sidebar from "@/components/Sidebar";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { posts } from "@/data/posts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "從數據看偏鄉醫療：那些隱藏在城鄉差距下的生命故事",
+    description: "回顧東北角與瑞芳的義診經驗，探討科技輔助遠距醫療的價值。走入偏鄉才知道，結合內外科邏輯的全面性腹部與頭頸部超音波評估有多麼無可替代。",
+};
 
 export default function BlogPost() {
     const currentPost = posts.find(p => p.slug === "2026-03-04-rural-medicine");

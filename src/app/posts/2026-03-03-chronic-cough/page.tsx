@@ -2,6 +2,12 @@ import Sidebar from "@/components/Sidebar";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { posts } from "@/data/posts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "慢性咳嗽的診斷邏輯：不是所有的咳都來自肺部",
+    description: "整合最新 ACCP 與 ERS 指引，三步拆解慢性咳嗽的可能原因：從上呼吸道咳嗽症候群(UACS/鼻涕倒流)、胃食道逆流(GERD)到咳嗽變異性氣喘(CVA)的標準鑑別診斷。",
+};
 
 export default function BlogPost() {
     const currentPost = posts.find(p => p.slug === "2026-03-03-chronic-cough");

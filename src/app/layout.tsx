@@ -9,8 +9,20 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
-  title: "陳政良醫師的跨領域醫療觀察",
+  metadataBase: new URL("https://drchenmd.tw"),
+  title: {
+    default: "陳政良醫師的跨領域醫療觀察",
+    template: "%s | 陳政良醫師",
+  },
   description: "從內科到耳鼻喉科，從臨床到流行病學，為複雜的醫療資訊找到最優解。",
+  openGraph: {
+    title: "陳政良醫師的跨領域醫療觀察",
+    description: "從內科到耳鼻喉科，從臨床到流行病學，為複雜的醫療資訊找到最優解。",
+    url: "https://drchenmd.tw",
+    siteName: "陳政良醫師的跨領域醫療觀察",
+    locale: "zh_TW",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

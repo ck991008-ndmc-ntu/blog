@@ -2,6 +2,12 @@ import Sidebar from "@/components/Sidebar";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { getPostsByTag, posts } from "@/data/posts";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "頭頸部超音波導引穿刺：非侵入性診斷的新標準",
+    description: "詳解甲狀腺、成人淋巴結、唾液腺的超音波導引穿刺(FNA/CNB)流程，並探討小兒頸部腫塊與淋巴結腫大的臨床處置指引。",
+};
 
 export default function BlogPost() {
     const currentPost = posts.find(p => p.slug === "2026-03-05-neck-ultrasound");
