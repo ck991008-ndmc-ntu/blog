@@ -27,17 +27,24 @@ export default function BlogPost() {
                             慢性鼻竇炎合併鼻息肉（CRSwNP）常因極高的復發率讓患者苦不堪言。隨著 ARIA-Italy 最新共識指引的發布，第二型發炎反應的「標靶治療」正全面顛覆傳統的處置邏輯，為難治型患者帶來新契機。
                         </p>
                         <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-gray-600">
-                            <strong>原文出處：</strong> ARIA-Italy multidisciplinary consensus on nasal polyposis and biological treatments: Update 2025 <br />
-                            <strong>期刊連結：</strong> <a href="https://doi.org/10.1016/j.waojou.2025.101058" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">World Allergy Organization Journal (DOI: 10.1016/j.waojou.2025.101058)</a>
+                            <strong className="text-[#1A2B3C] text-base mb-2 inline-block">權威參考文獻與醫學實證 (Evidence-Based Medicine)</strong>
+                            <ul className="list-decimal pl-5 space-y-3 break-words">
+                                <li>
+                                    <a href="https://doi.org/10.1016/j.waojou.2021.100592" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Gelardi, M., et al. (2021). ARIA-Italy multidisciplinary consensus on nasal polyposis and biological treatments. <em>World Allergy Organization Journal, 14</em>(11), 100592. https://doi.org/10.1016/j.waojou.2021.100592
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://doi.org/10.4193/Rhin20.600" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Fokkens, W. J., Lund, V. J., Hopkins, C., et al. (2020). European Position Paper on Rhinosinusitis and Nasal Polyps 2020. <em>Rhinology, 58</em>(Suppl S29), 1-464. https://doi.org/10.4193/Rhin20.600
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </header>
 
                     <article className="prose prose-lg prose-blue max-w-none text-gray-700">
                         {/* 內容開始 */}
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【文獻摘要】</h2>
-                        <p className="leading-relaxed">
-                            本指引為 ARIA (Allergic Rhinitis and its Impact on Asthma) 義大利跨領域團隊的最新共識（Update 2025）。文獻聚焦於<strong>慢性鼻竇炎合併鼻息肉（CRSwNP）</strong>與嚴重氣喘的「第二型發炎反應（Type-2 inflammation）」，並針對現行生物製劑（包含 Dupilumab、Omalizumab、Mepolizumab 等）提出具體的處方建議與術後追蹤標準。這是專門為胸腔科、耳鼻喉科與免疫科醫師所制定的臨床實務導航。
-                        </p>
 
                         <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【基礎知識】認識鼻竇解剖構造</h2>
                         <div className="my-8 flex flex-col md:flex-row gap-8 items-start bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
@@ -172,12 +179,15 @@ export default function BlogPost() {
 
 
 
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【Take Home Message】</h2>
-                        <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 慢性鼻竇炎合併鼻息肉（CRSwNP）若伴隨氣喘，多屬「第二型發炎反應」，復發率極高。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 最新 ARIA 共識明確定位：生物製劑是針對「手術失敗」或「難治型」患者的精準標靶治療。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 透過抽血檢驗生物標記（如嗜酸性球、IgE），可量身打造最合適的單株抗體，從根本改善生活品質。</li>
-                        </ul>
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【陳醫師的臨床意見】與疾病和平共處</h2>
+                        <div className="bg-amber-50 text-gray-800 p-8 rounded-xl shadow-md border border-amber-100 my-8 relative overflow-hidden">
+                            <p className="mb-4 text-xl font-bold text-amber-800">陳醫師的實務觀察：</p>
+                            <p className="leading-relaxed text-lg font-medium text-gray-700">
+                                作為有內科經驗目前在耳鼻喉科訓練的醫師，我經常看到患者因為害怕頻繁開刀而選擇「隱忍」鼻塞與失去嗅覺的痛苦。現在的醫學已經從「切割」進步到「精準調節」。
+                                <br /><br />
+                                如果您是手術後仍不斷復發的「苦主」，請不要灰心。建議您下次就診時，可以向醫師詢問抽血檢查「嗜酸性球」與「IgE」指數，讓我們判斷您是否屬於第二型發炎體質，這將是決定您是否適用生物製劑這項新武器的關鍵數據！
+                            </p>
+                        </div>
 
                         <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【FAQ 快速問答】解析</h2>
                         <div className="space-y-6">
@@ -210,22 +220,12 @@ export default function BlogPost() {
                             </div>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【醫師小建議】與疾病和平共處</h2>
-                        <div className="bg-amber-50 text-gray-800 p-8 rounded-xl shadow-md border border-amber-100 my-8 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 p-4 opacity-5 text-amber-900">
-                                <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L2 7L12 12L22 7L12 2Z"></path>
-                                    <path d="M2 17L12 22L22 17"></path>
-                                    <path d="M2 12L12 17L22 12"></path>
-                                </svg>
-                            </div>
-                            <p className="mb-4 text-xl font-bold text-amber-800">陳醫師的實務觀察：</p>
-                            <p className="leading-relaxed text-lg font-medium text-gray-700">
-                                作為有內科經驗目前在耳鼻喉科訓練的醫師，我經常看到患者因為害怕頻繁開刀而選擇「隱忍」鼻塞與失去嗅覺的痛苦。現在的醫學已經從「切割」進步到「精準調節」。
-                                <br /><br />
-                                如果您是手術後仍不斷復發的「苦主」，請不要灰心。建議您下次就診時，可以向醫師詢問抽血檢查「嗜酸性球」與「IgE」指數，讓我們判斷您是否屬於第二型發炎體質，這將是決定您是否適用生物製劑這項新武器的關鍵數據！
-                            </p>
-                        </div>
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【Take Home Message】</h2>
+                        <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 慢性鼻竇炎合併鼻息肉（CRSwNP）若伴隨氣喘，多屬「第二型發炎反應」，復發率極高。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 最新 ARIA 共識明確定位：生物製劑是針對「手術失敗」或「難治型」患者的精準標靶治療。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 透過抽血檢驗生物標記（如嗜酸性球、IgE），可量身打造最合適的單株抗體，從根本改善生活品質。</li>
+                        </ul>
 
                     </article>
                 </div>

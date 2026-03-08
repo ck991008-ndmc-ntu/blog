@@ -26,9 +26,21 @@ export default function BlogPost() {
                         <h1 className="text-3xl font-extrabold text-[#1A2B3C] mb-4 leading-tight">
                             {currentPost?.title}
                         </h1>
-                        <p className="text-xl text-gray-600 font-medium leading-relaxed">
-                            {currentPost?.summary}
-                        </p>
+                        <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-gray-600">
+                            <strong className="text-[#1A2B3C] text-base mb-2 inline-block">權威參考文獻與醫學實證 (Evidence-Based Medicine)</strong>
+                            <ul className="list-decimal pl-5 space-y-3 break-words">
+                                <li>
+                                    <a href="https://doi.org/10.7863/ultra.16.05002" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Bornemann, P., et al. (2017). Assessment of a Novel Point-of-Care Ultrasound Curriculum's Effect on Competency Measures in Family Medicine Graduate Medical Education. <em>Journal of Ultrasound in Medicine</em>. https://doi.org/10.7863/ultra.16.05002
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://doi.org/10.4102/phcfm.v17i1.4959" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Thirion, J. C., & Van Hoving, D. J. (2025). The merit of rural point-of-care ultrasound: Carotid pseudoaneurysm case report. <em>African Journal of Primary Health Care & Family Medicine, 17</em>(1), 4959. https://doi.org/10.4102/phcfm.v17i1.4959
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </header>
 
                     <article className="prose prose-lg prose-blue max-w-none text-gray-700">
@@ -55,8 +67,9 @@ export default function BlogPost() {
                         </p>
 
 
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【從偏鄉回到診間】我能為您做的全面超音波評估</h2>
-                        <div className="bg-gray-50 border border-gray-200 p-8 rounded-xl shadow-sm my-8">
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【陳醫師的臨床意見】從偏鄉回到診間</h2>
+                        <div className="bg-amber-50 text-gray-800 p-8 rounded-xl shadow-md border border-amber-100 my-8 relative overflow-hidden">
+                            <p className="mb-4 text-xl font-bold text-amber-800">陳醫師的實務觀察：</p>
                             <p className="text-lg leading-relaxed text-gray-800 font-medium mb-6">
                                 這些偏鄉的經驗深刻影響了我的臨床實務。在醫學中心裡，各科分工極細，病患看甲狀腺找一科，看肝臟又要掛另一科。但對病人來說，人是一個完整的個體。
                             </p>
@@ -79,20 +92,21 @@ export default function BlogPost() {
                                     </div>
                                 </li>
                             </ul>
+                            <div className="mt-8 border-t border-amber-200 pt-6">
+                                <p className="leading-relaxed font-bold text-[#1A2B3C] text-xl text-center mb-6">
+                                    「找我做超音波，絕對不是只花 3 分鐘跑流程的快速敷衍。」
+                                </p>
+                                <p className="leading-relaxed">
+                                    我深知超音波探頭下的每一個陰影，都牽動著一個家庭的情緒。因此，我的超音波檢查以<strong>仔細、全面、結合臨床數據分析</strong>為核心。我會花時間為您解釋影像的意義，結合您的抽血報告與家族史，並利用流行病學的邏輯，告訴您這個結節或囊腫「現在該如何處理」、「未來該如何追蹤」。這是一場為您量身打造的健康防護網。
+                                </p>
+                            </div>
                         </div>
-
-                        <p className="leading-relaxed font-bold text-[#1A2B3C] text-xl text-center my-8">
-                            「找我做超音波，絕對不是只花 3 分鐘跑流程的快速敷衍。」
-                        </p>
-                        <p className="leading-relaxed">
-                            我深知超音波探頭下的每一個陰影，都牽動著一個家庭的情緒。因此，我的超音波檢查以<strong>仔細、全面、結合臨床數據分析</strong>為核心。我會花時間為您解釋影像的意義，結合您的抽血報告與家族史，並利用流行病學的邏輯，告訴您這個結節或囊腫「現在該如何處理」、「未來該如何追蹤」。這是一場為您量身打造的健康防護網。
-                        </p>
 
                         <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【Take Home Message】</h2>
                         <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 偏鄉醫療的困境在於「距離」，而科技與手持超音波的結合，是打破遠距藩籬的最佳利器。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 人體是一個整體，擁有內科腹部超音波與耳鼻喉科頭頸超音波的雙重訓練，能為您提供更全面、不漏接的診斷視角。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 定期健康檢查中的超音波掃描，不應只是流水線作業。細膩的操作與結合臨床邏輯的判讀，才是及早揪出病灶的關鍵。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 偏鄉醫療的困境在於「距離」，而科技與手持超音波的結合，是打破遠距藩籬的最佳利器。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 人體是一個整體，擁有內科腹部超音波與耳鼻喉科頭頸超音波的雙重訓練，能為您提供更全面、不漏接的診斷視角。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 定期健康檢查中的超音波掃描，不應只是流水線作業。細膩的操作與結合臨床邏輯的判讀，才是及早揪出病灶的關鍵。</li>
                         </ul>
 
                     </article>

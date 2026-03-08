@@ -26,13 +26,20 @@ export default function BlogPost() {
                         <h1 className="text-3xl font-extrabold text-[#1A2B3C] mb-4 leading-tight">
                             {currentPost?.title}
                         </h1>
-                        <p className="text-xl text-gray-600 font-medium leading-relaxed">
-                            {currentPost?.summary}
-                        </p>
                         <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-gray-600">
-                            <strong>參考指引：</strong> <br />
-                            1. <strong>ACCP (美國胸腔科醫學會)：</strong> Guidelines for the management of chronic cough (2020 Update) <br />
-                            2. <strong>ERS (歐洲呼吸學會)：</strong> Guidelines on the diagnosis and treatment of chronic cough in adults and children (2020)
+                            <strong className="text-[#1A2B3C] text-base mb-2 inline-block">權威參考文獻與醫學實證 (Evidence-Based Medicine)</strong>
+                            <ul className="list-decimal pl-5 space-y-3 break-words">
+                                <li>
+                                    <a href="https://doi.org/10.1016/j.chest.2017.10.016" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Irwin, R. S., French, C. L., Chang, A. B., et al. (2018). Classification of Cough as a Symptom in Adults and Management Algorithms: CHEST Guideline and Expert Panel Report. <em>Chest, 153</em>(1), 196-209. https://doi.org/10.1016/j.chest.2017.10.016
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://doi.org/10.1183/13993003.01136-2019" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Morice, A. H., Millqvist, E., Bieksiene, K., et al. (2020). ERS guidelines on the diagnosis and treatment of chronic cough in adults and children. <em>European Respiratory Journal, 55</em>(1), 1901136. https://doi.org/10.1183/13993003.01136-2019
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </header>
 
@@ -108,21 +115,21 @@ export default function BlogPost() {
 
                                     <div className="flex flex-col gap-2 mt-2">
                                         <div className="bg-white p-3 rounded border border-blue-100 flex items-start gap-4">
-                                            <div className="w-24 shrink-0 font-bold text-[#1A2B3C]">👃 UACS <br /><span className="text-xs font-normal text-gray-500">上呼吸道症候群</span></div>
+                                            <div className="w-24 shrink-0 font-bold text-[#1A2B3C]">UACS <br /><span className="text-xs font-normal text-gray-500">上呼吸道症候群</span></div>
                                             <div className="text-sm text-gray-700">
                                                 <strong>症狀：</strong> 鼻塞、鼻涕倒流感、頻繁清喉嚨。<br />
                                                 <strong>治療：</strong> 第一代抗組織胺 + 偽麻黃鹼，或加上類固醇鼻噴劑。
                                             </div>
                                         </div>
                                         <div className="bg-white p-3 rounded border border-blue-100 flex items-start gap-4">
-                                            <div className="w-24 shrink-0 font-bold text-[#1A2B3C]">🫁 CVA <br /><span className="text-xs font-normal text-gray-500">咳嗽型氣喘</span></div>
+                                            <div className="w-24 shrink-0 font-bold text-[#1A2B3C]">CVA <br /><span className="text-xs font-normal text-gray-500">咳嗽型氣喘</span></div>
                                             <div className="text-sm text-gray-700">
                                                 <strong>症狀：</strong> 乾咳為主，夜間或接觸冷空氣變嚴重、喘鳴聲。<br />
                                                 <strong>治療：</strong> 吸入性類固醇 (ICS) 或支氣管擴張劑、白三烯受體拮抗劑。
                                             </div>
                                         </div>
                                         <div className="bg-white p-3 rounded border border-blue-100 flex items-start gap-4">
-                                            <div className="w-24 shrink-0 font-bold text-[#1A2B3C]">🔥 GERD <br /><span className="text-xs font-normal text-gray-500">胃食道逆流</span></div>
+                                            <div className="w-24 shrink-0 font-bold text-[#1A2B3C]">GERD <br /><span className="text-xs font-normal text-gray-500">胃食道逆流</span></div>
                                             <div className="text-sm text-gray-700">
                                                 <strong>症狀：</strong> 胸口灼熱、胃酸逆流、飯後或躺下時咳嗽加劇。<br />
                                                 <strong>治療：</strong> 改變飲食習慣 (戒咖啡因、甜食)、使用氫離子幫浦阻斷劑 (PPI) 至少 2-3 個月。
@@ -150,29 +157,22 @@ export default function BlogPost() {
                             </div>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【Take Home Message】</h2>
-                        <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 慢性咳嗽（大於8週）若胸部 X 光正常，最常見的元凶往往不在肺臟，而是在「鼻子」、「食道」或是「隱性氣喘」。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 治療慢性咳嗽就像在解謎，醫師常會使用「經驗性療法」：先開立鼻過敏或胃酸逆流的藥物吃一到兩週。如果咳嗽改善了，就等於同時完成了「診斷」與「治療」。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 不要自己亂買止咳藥水！市售止咳藥多半只能暫時壓制症狀，無法根除鼻炎或是胃酸對神經的刺激，甚至可能掩蓋惡性腫瘤的警訊。</li>
-                        </ul>
-
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【醫師小建議】與疾病和平共處</h2>
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【陳醫師的臨床意見】與疾病和平共處</h2>
                         <div className="bg-amber-50 text-gray-800 p-8 rounded-xl shadow-md border border-amber-100 my-8 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 p-4 opacity-5 text-amber-900">
-                                <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L2 7L12 12L22 7L12 2Z"></path>
-                                    <path d="M2 17L12 22L22 17"></path>
-                                    <path d="M2 12L12 17L22 12"></path>
-                                </svg>
-                            </div>
                             <p className="mb-4 text-xl font-bold text-amber-800">陳醫師的實務觀察：</p>
                             <p className="leading-relaxed text-lg font-medium text-gray-700">
-                                因為我有內科與耳鼻喉科的雙重訓練背景，慢性咳嗽的患者經常在我的門診大排長龍。耳鼻喉科醫師擅長用內視鏡直接看「鼻竇裡的膿」跟「咽喉上的胃酸灼傷」；而內科醫師則習慣傾聽「肺部的哮喘聲」。
+                                在內科與耳鼻喉科的雙重訓練背景之下，慢性咳嗽的患者經常在門診大排長龍。耳鼻喉科醫師擅長用內視鏡直接看「鼻竇裡的膿」跟「咽喉上的胃酸灼傷」；而內科醫師則習慣傾聽「肺部的哮喘聲」。
                                 <br /><br />
                                 慢性咳嗽的診斷需要無比的耐心。有時候患者可能同時合併了鼻涕倒流跟胃食道逆流 (Double whammy)。請給自己也給醫師一點時間，確實記錄下自己最常咳嗽的時機（如：吃飽後、半夜吹冷氣時、出門聞到特定異味時），這些看似微不足道的線索，往往是我們破解咳嗽謎團的萬能鑰匙！
                             </p>
                         </div>
+
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【Take Home Message】</h2>
+                        <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 慢性咳嗽（大於8週）若胸部 X 光正常，最常見的元凶往往不在肺臟，而是在「鼻子」、「食道」或是「隱性氣喘」。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 治療慢性咳嗽就像在解謎，醫師常會使用「經驗性療法」：先開立鼻過敏或胃酸逆流的藥物吃一到兩週。如果咳嗽改善了，就等於同時完成了「診斷」與「治療」。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 不要自己亂買止咳藥水！市售止咳藥多半只能暫時壓制症狀，無法根除鼻炎或是胃酸對神經的刺激，甚至可能掩蓋惡性腫瘤的警訊。</li>
+                        </ul>
 
                     </article>
                 </div>

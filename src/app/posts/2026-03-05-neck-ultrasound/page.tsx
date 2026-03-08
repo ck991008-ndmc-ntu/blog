@@ -26,14 +26,25 @@ export default function BlogPost() {
                         <h1 className="text-3xl font-extrabold text-[#1A2B3C] mb-4 leading-tight">
                             {currentPost?.title}
                         </h1>
-                        <p className="text-xl text-gray-600 font-medium leading-relaxed">
-                            {currentPost?.summary}
-                        </p>
                         <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-gray-600">
-                            <strong>參考指引：</strong> <br />
-                            1. 2015 ATA Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer <br />
-                            2. 2026 兒童淋巴結腫大臨床診治專家共識 <br />
-                            3. ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up of salivary gland cancers
+                            <strong className="text-[#1A2B3C] text-base mb-2 inline-block">權威參考文獻與醫學實證 (Evidence-Based Medicine)</strong>
+                            <ul className="list-decimal pl-5 space-y-3 break-words">
+                                <li>
+                                    <a href="https://doi.org/10.1089/thy.2015.0020" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Haugen, B. R., Alexander, E. K., Bible, K. C., et al. (2016). 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. <em>Thyroid, 26</em>(1), 1-133. https://doi.org/10.1089/thy.2015.0020
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://doi.org/10.1016/j.rcl.2019.01.005" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        Wagner, J. M., & Alleman, A. M. (2019). Ultrasonography of Cervical Lymph Nodes. <em>Radiologic Clinics of North America, 57</em>(3), 543-554. https://doi.org/10.1016/j.rcl.2019.01.005
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://doi.org/10.1016/j.esmoop.2022.100602" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        van Herpen, C., et al. (2022). ESMO Clinical Practice Guideline for diagnosis, treatment and follow-up of salivary gland cancers. <em>ESMO Open, 7</em>(6), 100602. https://doi.org/10.1016/j.esmoop.2022.100602
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </header>
 
@@ -65,28 +76,28 @@ export default function BlogPost() {
                         </p>
                         <ul className="space-y-4 font-medium text-gray-700 bg-gray-50 p-6 rounded-xl border border-gray-200 list-none pl-6 pr-6">
                             <li className="flex items-start gap-3">
-                                <span className="text-blue-600 mt-1">🩺</span>
+                                <span className="text-blue-600 mt-1">•</span>
                                 <div>
                                     <strong className="text-[#1A2B3C]">感染性淋巴結炎 (Reactive Lymphadenitis)：</strong><br />
                                     最常見的原因。通常伴隨上呼吸道感染、牙齒發炎或扁桃腺炎，呈雙側或單側腫大，具壓痛感。超音波下可見淋巴結門血流增加。多數在使用抗生素或保守觀察 1-2 週後會消退。
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-blue-600 mt-1">🩺</span>
+                                <span className="text-blue-600 mt-1">•</span>
                                 <div>
                                     <strong className="text-[#1A2B3C]">先天性囊腫 (Congenital Cysts)：</strong><br />
                                     如位於頸部正中線的<strong>甲狀舌管囊腫 (Thyroglossal duct cyst)</strong>（吞嚥時會跟著上下移動），或是位於側頸部的<strong>鰓裂囊腫 (Branchial cleft cyst)</strong>。這類囊腫年輕時可能沒發現，常在一次上呼吸道感染後突然腫起發炎。
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-blue-600 mt-1">🩺</span>
+                                <span className="text-blue-600 mt-1">•</span>
                                 <div>
                                     <strong className="text-[#1A2B3C]">蛤蟆腫 (Ranula)：</strong><br />
                                     特別提一下這種好發於兒童及年輕人的舌下腺/頷下腺黏液囊腫。它看起來就像青蛙鼓起的下巴一樣，超音波影像特徵為界線清楚的低回音囊腫。通常需要手術摘除舌下腺以避免復發。
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-red-500 mt-1">⚠️</span>
+                                <span className="text-red-500 mt-1">•</span>
                                 <div>
                                     <strong className="text-red-700">紅旗警訊 (Red Flags)：</strong><br />
                                     如果兒童的淋巴結腫大超過 2 公分、持續超過 4-6 週未縮小、質地堅硬、固定無法推動、位於鎖骨上區 (Supraclavicular)，或伴隨發燒、盜汗、體重減輕，必須立即透過超音波導引穿刺排除淋巴瘤或白血病的可能。
@@ -196,22 +207,8 @@ export default function BlogPost() {
                             </div>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【Take Home Message】</h2>
-                        <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 超音波導引穿刺 (US-FNA) 是目前診斷頭頸部不明腫塊、甲狀腺結節的安全首選，大幅減少了不必要的切片手術。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 成人發現無痛性頸部腫塊需高度警覺惡性可能；兒童的頸部腫塊則以感染及先天發育囊腫（如甲狀舌管囊腫、蛤蟆腫）居多。</li>
-                            <li className="flex items-start gap-3"><span className="text-blue-600">📌</span> 若兒童的腫塊伴隨「紅旗警訊」，請儘速就醫安排超音波排查，不要當成一般感冒輕忽。</li>
-                        </ul>
-
-                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【醫師小建議】與疾病和平共處</h2>
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-16 mb-6">【陳醫師的臨床意見】與疾病和平共處</h2>
                         <div className="bg-amber-50 text-gray-800 p-8 rounded-xl shadow-md border border-amber-100 my-8 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 p-4 opacity-5 text-amber-900">
-                                <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L2 7L12 12L22 7L12 2Z"></path>
-                                    <path d="M2 17L12 22L22 17"></path>
-                                    <path d="M2 12L12 17L22 12"></path>
-                                </svg>
-                            </div>
                             <p className="mb-4 text-xl font-bold text-amber-800">陳醫師的實務觀察：</p>
                             <p className="leading-relaxed text-lg font-medium text-gray-700">
                                 許多患者在門診常會問我：「抽針會不會很痛？會不會讓癌細胞擴散？」
@@ -219,6 +216,13 @@ export default function BlogPost() {
                                 其實，超音波導引細針抽吸使用的針頭非常細（比抽血的針還要細），過程大約只有一兩分鐘，且安全性極高、導致擴散的機率微乎其微。不論是內科或外科，我們都強調「先有正確的診斷，才有正確的治療」。精準的超音波診斷，能幫助我們避開血管跟神經，直搗病灶核心，是保護您的第一道防線。
                             </p>
                         </div>
+
+                        <h2 className="text-2xl font-bold text-[#1A2B3C] border-l-4 border-blue-600 pl-4 mt-12 mb-6">【Take Home Message】</h2>
+                        <ul className="space-y-4 font-medium text-lg text-[#1A2B3C] bg-blue-50/50 p-6 rounded-xl border border-blue-100 list-none pl-6 pr-6">
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 超音波導引穿刺 (US-FNA) 是目前診斷頭頸部不明腫塊、甲狀腺結節的安全首選，大幅減少了不必要的切片手術。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 成人發現無痛性頸部腫塊需高度警覺惡性可能；兒童的頸部腫塊則以感染及先天發育囊腫（如甲狀舌管囊腫、蛤蟆腫）居多。</li>
+                            <li className="flex items-start gap-3"><span className="text-blue-600">•</span> 若兒童的腫塊伴隨「紅旗警訊」，請儘速就醫安排超音波排查，不要當成一般感冒輕忽。</li>
+                        </ul>
 
                     </article>
                 </div>
