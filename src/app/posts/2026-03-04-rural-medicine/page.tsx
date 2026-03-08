@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { posts } from "@/data/posts";
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 export const metadata: Metadata = {
     title: "從數據看偏鄉醫療：那些隱藏在城鄉差距下的生命故事",
@@ -14,6 +15,7 @@ export default function BlogPost() {
 
     return (
         <div className="flex flex-col md:flex-row gap-8">
+            <ArticleJsonLd post={currentPost} />
             <div className="flex-1 space-y-8">
                 <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
                     <Link href="/" className="inline-flex items-center text-gray-500 hover:text-blue-600 mb-6 transition-colors font-medium">

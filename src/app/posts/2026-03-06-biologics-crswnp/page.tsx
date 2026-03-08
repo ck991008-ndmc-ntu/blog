@@ -2,6 +2,8 @@ import Sidebar from "@/components/Sidebar";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { posts } from "@/data/posts";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 export const metadata: Metadata = {
     title: "精準醫療時代：2026 最新指引解構——生物製劑在慢性鼻竇炎與鼻息肉的應用策略",
@@ -9,8 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPost() {
+    const currentPost = posts.find(p => p.slug === "2026-03-06-biologics-crswnp");
+
     return (
         <div className="flex flex-col md:flex-row gap-8">
+            <ArticleJsonLd post={currentPost} />
             <div className="flex-1 space-y-8">
                 <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
                     <Link href="/" className="inline-flex items-center text-gray-500 hover:text-blue-600 mb-6 transition-colors font-medium">

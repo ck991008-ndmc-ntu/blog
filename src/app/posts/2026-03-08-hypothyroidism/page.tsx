@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, Clock, Activity, ChevronRight } from "lucide-react";
 import { posts } from "@/data/posts";
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 export const metadata: Metadata = {
     title: "常常覺得累？從抽血數值看甲狀腺低下與慢性疲勞症候群",
@@ -15,6 +16,7 @@ export default function BlogPost() {
 
     return (
         <div className="flex flex-col md:flex-row gap-8">
+            <ArticleJsonLd post={currentPost} />
             <div className="flex-1 space-y-8">
                 {/* 麵包屑導覽 */}
                 <nav className="flex text-sm text-gray-500 font-medium">
