@@ -1,6 +1,10 @@
 "use client";
 
 import { BookOpen, Stethoscope, ChevronRight, Mail } from "lucide-react";
+import Link from "next/link";
+import { getAllTags, getAllCategories } from "@/data/posts";
+
+const NON_DISEASE_TAGS = ["內科", "家醫", "健康檢查", "頭頸部超音波", "腹部超音波", "甲狀腺超音波", "偏鄉醫療", "生物製劑"];
 
 export default function Sidebar() {
     return (
@@ -12,14 +16,9 @@ export default function Sidebar() {
                     <h3 className="font-bold text-[#1A2B3C] text-lg">文章分類</h3>
                 </div>
                 <ul className="space-y-3">
-                    {[
-                        { name: "耳鼻喉專科", count: 8 },
-                        { name: "內科疑難雜症", count: 5 },
-                        { name: "流行病學與預防醫學", count: 3 },
-                        { name: "診斷邏輯", count: 6 },
-                    ].map((topic) => (
+                    {getAllCategories().map((topic) => (
                         <li key={topic.name}>
-                            <a href="#" className="flex justify-between items-center group">
+                            <Link href={`/categories/${topic.name}`} className="flex justify-between items-center group">
                                 <span className="text-gray-700 group-hover:text-blue-600 transition-colors flex items-center gap-2">
                                     <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-blue-600" />
                                     {topic.name}
@@ -27,7 +26,7 @@ export default function Sidebar() {
                                 <span className="text-xs font-mono bg-gray-50 text-gray-500 px-2 py-1 rounded">
                                     {topic.count}
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -43,11 +42,13 @@ export default function Sidebar() {
                     快速尋找特定疾病的診斷與最新治療指引：
                 </p>
                 <div className="flex flex-wrap gap-2">
-                    {["甲狀腺結節", "慢性鼻竇炎", "睡眠呼吸中止症", "胃食道逆流", "慢性咳嗽", "眩暈", "突發性耳聾"].map((tag) => (
-                        <a key={tag} href={`#${tag}`} className="text-xs px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-[#1A2B3C] rounded-full transition-colors">
-                            #{tag}
-                        </a>
-                    ))}
+                    {getAllTags()
+                        .filter(({ tag }) => !NON_DISEASE_TAGS.includes(tag))
+                        .map(({ tag }) => (
+                            <Link key={tag} href={`/tags/${tag}`} className="text-xs px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-[#1A2B3C] rounded-full transition-colors">
+                                #{tag}
+                            </Link>
+                        ))}
                 </div>
             </div>
 
