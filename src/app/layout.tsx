@@ -11,15 +11,15 @@ const notoSansTC = Noto_Sans_TC({
 export const metadata: Metadata = {
   metadataBase: new URL("https://drchenmd.tw"),
   title: {
-    default: "陳政良醫師的跨領域醫療觀察",
+    default: "你的專屬醫療智庫｜陳政良醫師",
     template: "%s | 陳政良醫師",
   },
-  description: "從內科到耳鼻喉科，從臨床到流行病學，為複雜的醫療資訊找到最優解。",
+  description: "從內外科臨床到公衛實證，為您量身打造的健康策略",
   openGraph: {
-    title: "陳政良醫師的跨領域醫療觀察",
-    description: "從內科到耳鼻喉科，從臨床到流行病學，為複雜的醫療資訊找到最優解。",
+    title: "你的專屬醫療智庫｜陳政良醫師",
+    description: "從內外科臨床到公衛實證，為您量身打造的健康策略",
     url: "https://drchenmd.tw",
-    siteName: "陳政良醫師的跨領域醫療觀察",
+    siteName: "你的專屬醫療智庫｜陳政良醫師",
     locale: "zh_TW",
     type: "website",
   },
@@ -37,8 +37,8 @@ export default function RootLayout({
           <header className="bg-[#1A2B3C] text-white py-6 px-8 shadow-md">
             <div className="max-w-5xl mx-auto flex justify-between items-center">
               <div>
-                <h1 className="text-2xl font-bold tracking-wide">陳政良醫師</h1>
-                <p className="text-sm opacity-80 mt-1">從內科到耳鼻喉科，從臨床到流行病學</p>
+                <h1 className="text-2xl font-bold tracking-wide">你的專屬醫療智庫｜陳政良醫師</h1>
+                <p className="text-sm opacity-80 mt-1">從內外科臨床到公衛實證，為您量身打造的健康策略</p>
               </div>
               <nav className="space-x-6">
                 <a href="/" className="hover:text-blue-200 transition-colors">首頁</a>

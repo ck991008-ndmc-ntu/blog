@@ -6,6 +6,12 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row gap-8">
       <div className="flex-1 space-y-8">
+        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
+          <p className="text-lg text-blue-600 font-medium leading-relaxed">
+            「醫療指引給的是標準答案，但我希望能為您找到『適合您的答案』。結合內科的系統思維、耳鼻喉頭頸外科的專業，以及預防醫學的實證數據，我將與您一起在生活型態與醫療處置間，找出最佳平衡點。」
+          </p>
+        </div>
+
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-[#1A2B3C] mb-2 border-b-2 border-blue-100 pb-2 inline-block">最新文章</h2>
         </div>

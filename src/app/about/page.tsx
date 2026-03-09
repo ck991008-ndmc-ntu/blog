@@ -104,6 +104,72 @@ export default function AboutPage() {
                                 </div>
                             </div>
                         </section>
+
+                        <section className="pt-8 border-t border-gray-100">
+                            <h3 className="text-2xl font-bold text-[#1A2B3C] mb-6">關於陳政良醫師</h3>
+
+                            <div className="space-y-6">
+                                <div>
+                                    <h4 className="text-lg font-bold text-[#1A2B3C] mb-2 text-blue-700">我的醫療哲學：在科學證據與真實生活間找尋最佳解</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        醫療從來都不是單純的套用公式。從進入醫學領域的初期，我就深刻體認到，面對同樣的疾病，不同生活環境與工作型態的人，需要截然不同的處置策略。在東北角與瑞芳的長期義診經驗中，我學習到如何將醫療調整至最符合患者真實生活的狀態。這份對於「人」的關懷，成為我日後行醫的核心信念。
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-lg font-bold text-[#1A2B3C] mb-2 text-blue-700">跨領域的醫學養成：從人社思維到內外科兼具的精準醫療</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        我的學思歷程始於建中人文與社會科學資優班，這段經歷培養了我對於社會結構與人際互動的敏銳觀察力。進入國防醫學院接受扎實醫學訓練後，我先後於三軍總醫院完成一般醫學訓練，並在馬偕醫學中心紮下深厚的內科基石。帶著這套嚴謹、系統性的內科思維，我目前於長庚紀念醫院擔任耳鼻喉科住院醫師，將內科的全面性評估與耳鼻喉頭頸外科的精準技術（如頭頸部超音波、內視鏡）完美結合。
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-lg font-bold text-[#1A2B3C] mb-2 text-blue-700">為什麼要跨足流行病學？</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        為了提供更客觀、更具科學實證的醫療建議，我目前就讀於國立台灣大學公共衛生學院預防醫學與流行病學研究所碩士班。透過生物統計與統合分析，我能夠精準解讀龐大的醫學數據，將最新的研究成果轉化為臨床上的實用決策工具。這意味著，我能為您提供的，不僅是「經驗法則」，更是經得起科學檢驗的「實證數據」。
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h4 className="text-lg font-bold text-[#1A2B3C] mb-2 text-blue-700">寫給講求邏輯與效率的專業人士</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        對於身處高壓環境、決策講求邏輯的工程師、會計師或法界人士來說，時間是最寶貴的資產。我了解您面對健康問題時的焦慮，也明白您需要的不只是「多休息」這種空泛的建議。身為您的「個人醫療顧問」，我將運用跨科別的醫學知識與流行病學數據，為您拆解複雜的醫療資訊，並考量您的職業特性與生活型態，共同制定出最具效益的健康管理與治療策略。
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="pt-8 border-t border-gray-100">
+                            <h3 className="text-xl font-bold text-[#1A2B3C] mb-4 flex items-center gap-2">
+                                <span className="w-2 h-6 bg-blue-600 rounded"></span>
+                                簡歷亮點
+                            </h3>
+                            <div className="bg-gray-50 p-6 rounded-lg text-base text-gray-700 space-y-4">
+                                <div>
+                                    <p><strong>進修：</strong>國立台灣大學 公共衛生學院預防醫學與流行病學研究所 碩士在職專班 (2025–至今)</p>
+                                    <p><strong>現任：</strong>長庚紀念醫院 耳鼻喉科 住院醫師 (2024–至今)</p>
+                                </div>
+                                <div>
+                                    <p className="font-bold mb-1">經歷：</p>
+                                    <ul className="list-disc list-inside pl-2 space-y-1">
+                                        <li>馬偕醫學中心 內科部 住院醫師 (2023–2024)</li>
+                                        <li>三軍總醫院 一般醫學訓練醫師 (PGY) (2021–2023)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p><strong>學歷：</strong>國防醫學院 醫學系 (2015–2021) / 建國中學 人文暨社會科學資優班</p>
+                                </div>
+                                <div>
+                                    <p className="font-bold mb-1">公共參與：</p>
+                                    <ul className="list-disc list-inside pl-2 space-y-1">
+                                        <li>行政院教育部青年發展署 青年諮詢委員 (2019)</li>
+                                        <li>世界衛生大會(WHA)台灣青年團發言人(2019)</li>
+                                        <li>台灣醫學生聯合會 對外事務副會長 (2018)</li>
+                                        <li>東北角與瑞芳地區 醫療義診醫師 (2017起)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
