@@ -4,6 +4,7 @@ import Link from "next/link";
 import { posts } from "@/data/posts";
 import type { Metadata } from "next";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import PostNavigation from "@/components/PostNavigation";
 
 export const metadata: Metadata = {
     title: "慢性咳嗽的診斷邏輯：不是所有的咳都來自肺部",
@@ -184,6 +185,7 @@ export default function BlogPost() {
 
                     </article>
                 </div>
+                <PostNavigation currentSlug="2026-03-03-chronic-cough" />
             </div>
 
             <Sidebar />

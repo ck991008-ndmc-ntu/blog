@@ -5,6 +5,7 @@ import { ArrowLeft, Clock, Activity, ChevronRight } from "lucide-react";
 import { posts } from "@/data/posts";
 import type { Metadata } from "next";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import PostNavigation from "@/components/PostNavigation";
 
 export const metadata: Metadata = {
     title: "常常覺得累？從抽血數值看甲狀腺低下與慢性疲勞症候群",
@@ -213,15 +214,7 @@ export default function BlogPost() {
                     </div>
                 </article>
 
-                {/* Footer Navigation */}
-                <div className="flex justify-between items-center py-6 border-t border-gray-200">
-                    <Link href="/posts/2026-03-05-neck-ultrasound" className="flex items-center text-gray-500 hover:text-blue-600 font-medium transition-colors group">
-                        <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
-                        <span className="hidden sm:inline">上一篇：頭頸部超音波導引穿刺</span>
-                        <span className="sm:hidden">上一篇</span>
-                    </Link>
-                    {/* It is the latest post, no next post for now */}
-                </div>
+                <PostNavigation currentSlug="2026-03-08-hypothyroidism" />
             </div>
 
             <Sidebar />

@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { posts } from "@/data/posts";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import PostNavigation from "@/components/PostNavigation";
 
 export const metadata: Metadata = {
     title: "精準醫療時代：2026 最新指引解構——生物製劑在慢性鼻竇炎與鼻息肉的應用策略",
@@ -240,6 +241,7 @@ export default function BlogPost() {
 
                     </article>
                 </div>
+                <PostNavigation currentSlug="2026-03-06-biologics-crswnp" />
             </div>
 
             <Sidebar />

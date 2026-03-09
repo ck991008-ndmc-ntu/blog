@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getPostsByTag, posts } from "@/data/posts";
 import type { Metadata } from "next";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import PostNavigation from "@/components/PostNavigation";
 
 export const metadata: Metadata = {
     title: "頭頸部超音波導引穿刺：非侵入性診斷的新標準",
@@ -234,6 +235,7 @@ export default function BlogPost() {
 
                     </article>
                 </div>
+                <PostNavigation currentSlug="2026-03-05-neck-ultrasound" />
             </div>
 
             <Sidebar />
