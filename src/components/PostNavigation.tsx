@@ -18,33 +18,37 @@ export default function PostNavigation({ currentSlug }: PostNavigationProps) {
     const nextPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
 
     return (
-        <div className="flex justify-between items-center py-6 border-t border-gray-200 mt-8 gap-4">
-            <div className="flex-1">
+        <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center py-6 border-t border-gray-200 mt-8 gap-4 w-full">
+            <div className="flex-1 w-full sm:w-1/2 flex">
                 {prevPost && (
                     <Link
                         href={`/posts/${prevPost.slug}`}
-                        className="flex items-center text-gray-500 hover:text-blue-600 font-medium transition-colors group"
+                        className="flex items-center text-gray-500 hover:text-blue-600 font-medium transition-colors group p-3 sm:p-4 rounded-lg bg-gray-50 hover:bg-blue-50/50 border border-gray-100 hover:border-blue-100 w-full"
                     >
-                        <ArrowLeft className="w-5 h-5 mr-2 shrink-0 group-hover:-translate-x-1 transition-transform" />
-                        <span className="hidden sm:inline line-clamp-1 truncate" title={prevPost.title}>
-                            上一篇：{prevPost.title}
-                        </span>
-                        <span className="sm:hidden">上一篇</span>
+                        <ArrowLeft className="w-5 h-5 mr-3 shrink-0 group-hover:-translate-x-1 transition-transform" />
+                        <div className="flex flex-col flex-1 min-w-0">
+                            <span className="text-xs text-gray-400 mb-1">上一篇</span>
+                            <span className="text-sm sm:text-base text-gray-800 group-hover:text-blue-700 line-clamp-2 leading-tight" title={prevPost.title}>
+                                {prevPost.title}
+                            </span>
+                        </div>
                     </Link>
                 )}
             </div>
 
-            <div className="flex-1 flex justify-end text-right">
+            <div className="flex-1 w-full sm:w-1/2 flex justify-end">
                 {nextPost && (
                     <Link
                         href={`/posts/${nextPost.slug}`}
-                        className="flex items-center justify-end text-gray-500 hover:text-blue-600 font-medium transition-colors group"
+                        className="flex items-center justify-end text-right text-gray-500 hover:text-blue-600 font-medium transition-colors group p-3 sm:p-4 rounded-lg bg-gray-50 hover:bg-blue-50/50 border border-gray-100 hover:border-blue-100 w-full"
                     >
-                        <span className="hidden sm:inline line-clamp-1 truncate" title={nextPost.title}>
-                            下一篇：{nextPost.title}
-                        </span>
-                        <span className="sm:hidden">下一篇</span>
-                        <ArrowRight className="w-5 h-5 ml-2 shrink-0 group-hover:translate-x-1 transition-transform" />
+                        <div className="flex flex-col flex-1 min-w-0">
+                            <span className="text-xs text-gray-400 mb-1">下一篇</span>
+                            <span className="text-sm sm:text-base text-gray-800 group-hover:text-blue-700 line-clamp-2 leading-tight" title={nextPost.title}>
+                                {nextPost.title}
+                            </span>
+                        </div>
+                        <ArrowRight className="w-5 h-5 ml-3 shrink-0 group-hover:translate-x-1 transition-transform" />
                     </Link>
                 )}
             </div>
