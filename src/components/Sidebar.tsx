@@ -60,7 +60,7 @@ export default function Sidebar() {
                     有任何耳鼻喉科或內科相關問題？或是對於流行病學數據有興趣討論？歡迎來信指教。
                 </p>
                 <a
-                    href="mailto:contact@example.com"
+                    href="mailto:jlchen.cgmh@gmail.com"
                     className="inline-block w-full py-2 px-4 bg-white text-[#1A2B3C] font-bold rounded shadow-sm border border-gray-200 hover:bg-gray-50 hover:text-blue-600 transition-colors"
                 >
                     寫信給陳醫師
