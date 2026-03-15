@@ -201,7 +201,7 @@ export default function BlogPost() {
                                 <div className="h-6 w-0.5 bg-gray-300"></div>
 
                                 {/* Decision: CPAP tolerance */}
-                                <div className="w-full max-w-sm bg-amber-50 border-2 border-amber-300 text-amber-800 p-4 rounded-xl text-center shadow-sm" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
+                                <div className="w-full max-w-sm bg-amber-50 border-2 border-amber-300 text-amber-800 p-4 rounded-xl text-center shadow-sm" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}>
                                     <div className="font-bold py-6">CPAP 是否可接受/耐受？</div>
                                 </div>
 
@@ -300,7 +300,7 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-blue-700">Tirzepatide</td>
                                         <td className="px-4 py-3">猛健樂 (Mounjaro)</td>
                                         <td className="px-4 py-3">GIP/GLP-1 受體促效劑</td>
-                                        <td className="px-4 py-3">肥胖型 OSA（BMI ≥ 30）<br/><span className="text-xs text-gray-500">SURMOUNT-OSA 試驗顯示 AHI 降幅約 50-60%</span></td>
+                                        <td className="px-4 py-3">肥胖型 OSA（BMI ≥ 30）<br /><span className="text-xs text-gray-500">SURMOUNT-OSA 試驗顯示 AHI 降幅約 50-60%</span></td>
                                         <td className="px-4 py-3 text-gray-700 font-medium">RCT</td>
                                         <td className="px-4 py-3 text-gray-700">限 T2DM，OSA 自費</td>
                                     </tr>
@@ -308,7 +308,7 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-blue-700">Modafinil</td>
                                         <td className="px-4 py-3">普衛醒 (Provigil)</td>
                                         <td className="px-4 py-3">中樞神經促醒劑</td>
-                                        <td className="px-4 py-3">CPAP 使用中仍有殘餘日間嗜睡 (Residual EDS)<br/><span className="text-xs text-gray-500">不降低 AHI，僅改善嗜睡</span></td>
+                                        <td className="px-4 py-3">CPAP 使用中仍有殘餘日間嗜睡 (Residual EDS)<br /><span className="text-xs text-gray-500">不降低 AHI，僅改善嗜睡</span></td>
                                         <td className="px-4 py-3 text-gray-700 font-medium">RCT</td>
                                         <td className="px-4 py-3 text-gray-700">管制藥品，限嗜睡症</td>
                                     </tr>
@@ -316,7 +316,7 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-blue-700">Acetazolamide</td>
                                         <td className="px-4 py-3">丹木斯 (Diamox)</td>
                                         <td className="px-4 py-3">碳酸酐酶抑制劑</td>
-                                        <td className="px-4 py-3">合併中樞型或高海拔相關睡眠呼吸中止<br/><span className="text-xs text-gray-500">可降低 AHI 約 50%（小型研究）</span></td>
+                                        <td className="px-4 py-3">合併中樞型或高海拔相關睡眠呼吸中止<br /><span className="text-xs text-gray-500">可降低 AHI 約 50%（小型研究）</span></td>
                                         <td className="px-4 py-3 text-gray-700 font-medium">小型 RCT</td>
                                         <td className="px-4 py-3 text-gray-700">限青光眼／癲癇適應症</td>
                                     </tr>
@@ -324,7 +324,7 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-blue-700">Atomoxetine + Oxybutynin</td>
                                         <td className="px-4 py-3">思銳 + 歐舒</td>
                                         <td className="px-4 py-3">NRI + 抗膽鹼複方</td>
-                                        <td className="px-4 py-3">研究中的 OSA 病理機轉靶向治療<br/><span className="text-xs text-gray-500">提高上呼吸道肌張力 + 降低 loop gain</span></td>
+                                        <td className="px-4 py-3">研究中的 OSA 病理機轉靶向治療<br /><span className="text-xs text-gray-500">提高上呼吸道肌張力 + 降低 loop gain</span></td>
                                         <td className="px-4 py-3 text-gray-700 font-medium">小型 RCT</td>
                                         <td className="px-4 py-3 text-gray-700">均為仿單外使用</td>
                                     </tr>
@@ -332,7 +332,7 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-blue-700">鼻用類固醇</td>
                                         <td className="px-4 py-3">內舒拿 (Nasonex) 等</td>
                                         <td className="px-4 py-3">鼻腔抗發炎</td>
-                                        <td className="px-4 py-3">合併過敏性鼻炎、鼻塞之 OSA<br/><span className="text-xs text-gray-500">改善鼻腔通暢性，可輔助降低 CPAP 壓力</span></td>
+                                        <td className="px-4 py-3">合併過敏性鼻炎、鼻塞之 OSA<br /><span className="text-xs text-gray-500">改善鼻腔通暢性，可輔助降低 CPAP 壓力</span></td>
                                         <td className="px-4 py-3 text-gray-700 font-medium">Meta-analysis</td>
                                         <td className="px-4 py-3 text-gray-700">健保給付（鼻炎適應症）</td>
                                     </tr>
@@ -423,7 +423,7 @@ export default function BlogPost() {
 
                         <div className="bg-blue-50 border border-blue-200 p-5 rounded-xl my-8">
                             <p className="text-sm text-blue-800">
-                                <strong>術前評估亮點：DISE（藥物誘導睡眠內視鏡）</strong><br/>
+                                <strong>術前評估亮點：DISE（藥物誘導睡眠內視鏡）</strong><br />
                                 在決定手術方式之前，睡眠外科醫師會利用 DISE 讓患者在藥物誘導的睡眠狀態下，以纖維內視鏡觀察上呼吸道各個位置（軟顎、咽側壁、舌根、會厭）的塌陷模式。這就像是 debug 前先用 profiler 找到最慢的那段 code 一樣——找到真正的阻塞瓶頸，才能精準修復。
                             </p>
                         </div>
@@ -434,10 +434,10 @@ export default function BlogPost() {
                         <div className="bg-amber-50 text-gray-800 p-8 rounded-xl shadow-md border border-amber-100 my-8 relative overflow-hidden">
                             <p className="mb-4 text-xl font-bold text-amber-800">陳醫師的實務觀察：</p>
                             <p className="leading-relaxed text-lg font-medium text-gray-700">
-                                身為曾經也在醫院輪三班的住院醫師，我完全理解那種「睡眠被壓縮到只剩基本需求」的感受。但如果你的枕邊人經常提到你「打呼到突然沒聲音」，或者你白天不管睡多久都還是極度疲倦、開會簡報時眼皮總是不受控制地下沉——這些都是身體在發出 critical alert。
-                                <br/><br/>
+                                身為也在醫院輪班的醫師，我完全理解那種「睡眠被壓縮到只剩基本需求」的感受。但如果你的枕邊人經常提到你「打呼到突然沒聲音」，或者你白天不管睡多久都還是極度疲倦、開會簡報時眼皮總是不受控制地下沉——這些都是身體在發出 critical alert。
+                                <br /><br />
                                 我的建議是：<strong>先做篩檢</strong>。現在很多醫院和診所都有居家睡眠檢查 (HSAT) 服務，不用住院、大約三千多元就能在家完成，連掛號帶報告一週搞定。如果 AHI 確實偏高，再來跟睡眠專科醫師討論 CPAP 或其他選項，完全不需要一開始就想到手術。
-                                <br/><br/>
+                                <br /><br />
                                 至於藥物，我特別想提一下 <strong>Tirzepatide</strong>——它在 2024 年 SURMOUNT-OSA 試驗中展現出令人驚豔的成果，對肥胖合併 OSA 的患者可以一箭雙鵰：減重 + 降 AHI。但目前台灣健保僅給付糖尿病適應症，用於 OSA 需自費。如果你恰好也有高 BMI 和代謝問題，這是一個值得和你的醫師討論的新武器。
                             </p>
                         </div>
