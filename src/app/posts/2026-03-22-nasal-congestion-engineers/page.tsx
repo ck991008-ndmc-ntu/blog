@@ -242,7 +242,7 @@ export default function BlogPost() {
                                     <strong className="text-amber-900">類固醇噴劑是長線投資，不是短線炒作：</strong>千萬不要像點眼藥水一樣「卡卡的時候才噴」。類固醇噴劑需要<strong>每天定時噴</strong>，持續累積約兩週以上，才能真正在黏膜深處發揮強大的抗發炎效果！
                                 </li>
                                 <li className="pl-2">
-                                    <strong className="text-amber-900">該動刀就別拖延：</strong>如果用藥無效，每天早上起床都覺得比沒睡還累，請果斷考慮局部麻醉微創手術。現在的「微創動力旋轉刀 (Microdebrider)」手術時間短、出血少，對結構性阻塞的改善是立竿見影的，這絕對是 ROI (投資報酬率) 最高的健康決策。
+                                    <strong className="text-amber-900">該動刀就別拖延：</strong>如果用藥無效，每天早上起床都覺得比沒睡還累，請果斷考慮局部麻醉微創手術。現在的各式鼻塞手術都有手術時間短、出血少，對結構性阻塞的改善的優勢，對於藥物使用失敗以及結構(硬體)上有問題的工程師們來說這絕對是 ROI (投資報酬率) 最高的健康決策。
                                 </li>
                                 <li className="pl-2">
                                     <strong className="text-amber-900">遠離藥局速效噴劑：</strong>把它當成萬靈丹，最後只會換來無藥可醫的藥物性鼻炎。
