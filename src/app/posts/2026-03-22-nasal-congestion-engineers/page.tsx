@@ -177,7 +177,7 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-blue-700">血管收縮噴劑<br/><span className="text-xs text-gray-500">(藥局常見速效型)</span></td>
                                         <td className="px-4 py-3">強制鼻黏膜血管收縮</td>
                                         <td className="px-4 py-3">短短幾分鐘內瞬間暢通</td>
-                                        <td className="px-4 py-3 font-bold text-red-600">嚴禁連用超過 5 天！易導致藥物性鼻炎，造成永久結構損傷</td>
+                                        <td className="px-4 py-3 font-bold text-red-600">請勿使用超過5天，否則可能導致藥物性鼻炎</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -196,7 +196,8 @@ export default function BlogPost() {
                                         <th className="px-4 py-3 text-left font-bold whitespace-nowrap">手術術式</th>
                                         <th className="px-4 py-3 text-left font-bold whitespace-nowrap">原理說明</th>
                                         <th className="px-4 py-3 text-left font-bold whitespace-nowrap">疼痛度/出血量</th>
-                                        <th className="px-4 py-3 text-left font-bold whitespace-nowrap">優缺點比較</th>
+                                        <th className="px-4 py-3 text-left font-bold whitespace-nowrap">優點</th>
+                                        <th className="px-4 py-3 text-left font-bold whitespace-nowrap">缺點</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -204,25 +205,29 @@ export default function BlogPost() {
                                         <td className="px-4 py-3 font-bold text-teal-700">雷射下鼻甲手術<br/><span className="text-xs font-normal text-gray-500">(Laser)</span></td>
                                         <td className="px-4 py-3">利用雷射高溫將肥厚黏膜氣化、燒灼結痂</td>
                                         <td className="px-4 py-3">低疼痛<br/>極少出血</td>
-                                        <td className="px-4 py-3">✅ 門診即可做，時間極短<br/>❌ 僅處理表層黏膜，1-2 年後復發率偏高</td>
+                                        <td className="px-4 py-3">門診即可做，時間極短</td>
+                                        <td className="px-4 py-3">仍有復發黏膜肥厚的機會</td>
                                     </tr>
                                     <tr className="bg-gray-50 border-b border-gray-100 hover:bg-teal-50/30">
                                         <td className="px-4 py-3 font-bold text-teal-700">無線電波下鼻甲手術<br/><span className="text-xs font-normal text-gray-500">(Radiofrequency)</span></td>
                                         <td className="px-4 py-3">金屬探針插入黏膜下層，發放電波使蛋白質凝固萎縮</td>
                                         <td className="px-4 py-3">低疼痛<br/>極少出血</td>
-                                        <td className="px-4 py-3">✅ 保留表面黏膜功能，結痂少<br/>❌ 針對骨頭肥厚者無效，仍有一定復發率</td>
+                                        <td className="px-4 py-3">保留表面黏膜功能，結痂少</td>
+                                        <td className="px-4 py-3">針對骨頭肥厚者無效，仍有一定復發率</td>
                                     </tr>
                                     <tr className="bg-white border-b border-gray-100 hover:bg-teal-50/30">
                                         <td className="px-4 py-3 font-bold text-teal-700">微創動力旋轉刀手術<br/><span className="text-xs font-normal text-gray-500">(Microdebrider)</span></td>
                                         <td className="px-4 py-3">劃開小切口，用旋轉刀將過多的深層組織絞碎吸出</td>
                                         <td className="px-4 py-3">中低疼痛<br/>少量出血 (需填塞)</td>
-                                        <td className="px-4 py-3">✅ 切除根本組織，效果最持久，復發率低<br/>❌ 術後 1-2 天需塞止血棉條，恢復期略長</td>
+                                        <td className="px-4 py-3">切除根本組織，效果最持久，復發率低</td>
+                                        <td className="px-4 py-3">術後 1-2 天需塞止血棉條，恢復期略長</td>
                                     </tr>
                                     <tr className="bg-gray-50 border-b border-gray-100 hover:bg-teal-50/30">
                                         <td className="px-4 py-3 font-bold text-teal-700">鼻中膈彎曲全方位矯正<br/><span className="text-xs font-normal text-gray-500">(Septoplasty)</span></td>
                                         <td className="px-4 py-3">掀開黏膜，移除或削平彎曲不平整的軟/硬骨</td>
                                         <td className="px-4 py-3">中度疼痛<br/>中量出血</td>
-                                        <td className="px-4 py-3">✅ 徹底解決結構異常的黃金標準<br/>❌ 手術時間較長，通常與下鼻甲手術合併進行</td>
+                                        <td className="px-4 py-3">徹底解決結構異常的黃金標準</td>
+                                        <td className="px-4 py-3">手術時間較長，通常與下鼻甲手術合併進行</td>
                                     </tr>
                                 </tbody>
                             </table>
