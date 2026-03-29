@@ -10,6 +10,15 @@ export interface Post {
 
 export const posts: Post[] = [
     {
+        title: "癌症篩檢的新里程碑：解析 14 萬人 Galleri 試驗的震撼數據",
+        summary: "深度解析世界上規模最大的多癌血液篩檢 NHS-Galleri 試驗的首輪結果，探討其對晚期診斷減少與「階段移轉」效應的重大臨床價值。",
+        date: "2026/03/29",
+        category: "流行病學與預防醫學",
+        readTime: "7 min read",
+        slug: "2026-03-29-galleri-trial",
+        tags: ["Galleri", "多癌早期篩檢", "階段移轉", "頭頸部癌", "癌症預防"],
+    },
+    {
         title: "工程師必讀：鼻塞、過敏與下鼻甲肥厚完全解碼",
         summary: "針對高壓工程師族群，解析鼻塞、下鼻甲肥厚及鼻中膈彎曲的診斷流程、藥物噴劑（含血管收縮劑風險與類固醇噴劑正確用法）及局部麻醉微創手術總整理。",
         date: "2026/03/22",
