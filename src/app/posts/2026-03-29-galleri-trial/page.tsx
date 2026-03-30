@@ -35,6 +35,21 @@ export default function BlogPost() {
                         <h1 className="text-3xl font-extrabold text-[#1A2B3C] mb-4 leading-tight">
                             {currentPost?.title}
                         </h1>
+                        <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200 text-sm text-gray-600">
+                            <strong className="text-[#1A2B3C] text-base mb-2 inline-block">權威參考文獻與醫學實證 (Evidence-Based Medicine)</strong>
+                            <ul className="list-decimal pl-5 space-y-3 break-words">
+                                <li>
+                                    <a href="https://grail.com/press-releases/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        GRAIL. (2026, February 19). <em>GRAIL Announces Topline Results from NHS-Galleri Trial.</em> GRAIL Official Press Releases.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://clinicaltrials.gov/study/NCT05611632" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
+                                        ClinicalTrials.gov. (2026). <em>The NHS-Galleri Trial (NCT05611632)</em>. U.S. National Library of Medicine.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </header>
 
                     <article className="prose prose-lg prose-blue max-w-none text-gray-700">
