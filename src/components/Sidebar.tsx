@@ -4,9 +4,31 @@ import { BookOpen, Stethoscope, ChevronRight, Mail } from "lucide-react";
 import Link from "next/link";
 import { getAllTags, getAllCategories } from "@/data/posts";
 
-const NON_DISEASE_TAGS = ["內科", "家醫", "健康檢查", "頭頸部超音波", "腹部超音波", "甲狀腺超音波", "偏鄉醫療", "生物製劑"];
+const SYMPTOM_GROUPS = [
+    { name: "鼻部與呼吸", tags: ["鼻塞", "流鼻水", "打噴嚏", "呼吸不順", "黃鼻涕", "嗅覺異常", "臉部脹痛"] },
+    { name: "睡眠與精神", tags: ["打呼", "白天嗜睡", "睡眠中斷", "越睡越累", "慢性疲勞", "總是睡不飽", "無力", "精神不濟"] },
+    { name: "咳嗽與喉部", tags: ["慢性咳嗽", "久咳不癒", "喉嚨卡卡", "喉嚨異物感", "吞嚥卡卡"] },
+    { name: "頸部與腹部", tags: ["頸部腫塊", "脖子有硬塊", "腹部不適"] },
+    { name: "預防與健檢", tags: ["無症狀", "預防醫學", "健康檢查", "全身健檢"] },
+];
 
 export default function Sidebar() {
+    const allTags = getAllTags().map(t => t.tag);
+    
+    // 分類並過濾出確實有文章的標籤
+    const groupedTags = SYMPTOM_GROUPS.map(group => ({
+        ...group,
+        tags: group.tags.filter(tag => allTags.includes(tag))
+    })).filter(group => group.tags.length > 0);
+
+    // 處理尚未分類到的其他標籤，自動歸類到「其他症狀」
+    const mappedTags = new Set(SYMPTOM_GROUPS.flatMap(g => g.tags));
+    const otherTags = allTags.filter(tag => !mappedTags.has(tag));
+    
+    if (otherTags.length > 0) {
+        groupedTags.push({ name: "其他症狀", tags: otherTags });
+    }
+
     return (
         <aside className="w-full md:w-80 shrink-0 space-y-8">
             {/* Topics */}
@@ -32,23 +54,31 @@ export default function Sidebar() {
                 </ul>
             </div>
 
-            {/* Disease Tags */}
+            {/* Symptom Tags */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                 <div className="flex items-center gap-3 mb-4">
                     <BookOpen className="text-[#1A2B3C] w-6 h-6" />
-                    <h3 className="font-bold text-[#1A2B3C] text-lg">疾病快篩標籤</h3>
+                    <h3 className="font-bold text-[#1A2B3C] text-lg">症狀導向標籤</h3>
                 </div>
-                <p className="text-sm text-gray-600 mb-4">
-                    快速尋找特定疾病的診斷與最新治療指引：
+                <p className="text-sm text-gray-600 mb-6">
+                    透過您的症狀，快速尋找相關的診斷與治療指引：
                 </p>
-                <div className="flex flex-wrap gap-2">
-                    {getAllTags()
-                        .filter(({ tag }) => !NON_DISEASE_TAGS.includes(tag))
-                        .map(({ tag }) => (
-                            <Link key={tag} href={`/tags/${tag}`} className="text-xs px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-[#1A2B3C] rounded-full transition-colors">
-                                #{tag}
-                            </Link>
-                        ))}
+                <div className="space-y-6">
+                    {groupedTags.map(group => (
+                        <div key={group.name} className="space-y-3">
+                            <h4 className="text-sm font-bold text-[#1A2B3C] border-b border-gray-100 pb-2 flex items-center">
+                                <span className="w-1.5 h-4 bg-blue-500 rounded-full mr-2"></span>
+                                {group.name}
+                            </h4>
+                            <div className="flex flex-wrap gap-2">
+                                {group.tags.map(tag => (
+                                    <Link key={tag} href={`/tags/${tag}`} className="text-xs px-3 py-1.5 bg-blue-50 hover:bg-blue-100 text-[#1A2B3C] rounded-lg transition-colors font-medium">
+                                        {tag}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
 

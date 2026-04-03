@@ -16,7 +16,7 @@ export const posts: Post[] = [
         category: "流行病學與預防醫學",
         readTime: "7 min read",
         slug: "2026-03-29-galleri-trial",
-        tags: ["Galleri", "多癌早期篩檢", "階段移轉", "頭頸部癌", "癌症預防"],
+        tags: ["無症狀", "預防醫學", "健康檢查"],
     },
     {
         title: "工程師必讀：鼻塞、過敏與下鼻甲肥厚完全解碼",
@@ -25,7 +25,7 @@ export const posts: Post[] = [
         category: "耳鼻喉專科",
         readTime: "8 min read",
         slug: "2026-03-22-nasal-congestion-engineers",
-        tags: ["鼻塞", "鼻過敏", "下鼻甲肥厚", "微創手術", "過敏性鼻炎"],
+        tags: ["鼻塞", "流鼻水", "打噴嚏", "呼吸不順"],
     },
     {
         title: "工程師必讀：睡眠呼吸中止症的藥物與手術治療指引初解",
@@ -34,7 +34,7 @@ export const posts: Post[] = [
         category: "耳鼻喉專科",
         readTime: "10 min read",
         slug: "2026-03-15-osa-treatment",
-        tags: ["睡眠呼吸中止症", "OSA", "CPAP", "手術治療", "藥物治療", "工程師健康"],
+        tags: ["打呼", "白天嗜睡", "睡眠中斷", "越睡越累"],
     },
     {
         title: "常常覺得累？從抽血數值看甲狀腺低下與慢性疲勞症候群",
@@ -43,7 +43,7 @@ export const posts: Post[] = [
         category: "內科疑難雜症",
         readTime: "6 min read",
         slug: "2026-03-08-hypothyroidism",
-        tags: ["甲狀腺低下", "慢性疲勞", "抽血檢查", "內科", "家醫"],
+        tags: ["慢性疲勞", "總是睡不飽", "無力", "精神不濟"],
     },
     {
         title: "精準醫療時代：2026 最新指引解構——生物製劑在慢性鼻竇炎與鼻息肉的應用策略",
@@ -52,7 +52,7 @@ export const posts: Post[] = [
         category: "耳鼻喉專科",
         readTime: "8 min read",
         slug: "2026-03-06-biologics-crswnp",
-        tags: ["鼻竇炎", "生物製劑"],
+        tags: ["鼻塞", "黃鼻涕", "嗅覺異常", "臉部脹痛"],
     },
     {
         title: "頭頸部超音波導引穿刺：非侵入性診斷的新標準",
@@ -61,7 +61,7 @@ export const posts: Post[] = [
         category: "耳鼻喉專科",
         readTime: "7 min read",
         slug: "2026-03-05-neck-ultrasound",
-        tags: ["頭頸部超音波", "甲狀腺結節", "頸部腫塊", "甲狀腺超音波", "小兒頸部腫塊", "蛤蟆腫"],
+        tags: ["頸部腫塊", "脖子有硬塊", "吞嚥卡卡"],
     },
     {
         title: "從數據看偏鄉醫療：那些隱藏在城鄉差距下的生命故事",
@@ -70,7 +70,7 @@ export const posts: Post[] = [
         category: "流行病學與預防醫學",
         readTime: "6 min read",
         slug: "2026-03-04-rural-medicine",
-        tags: ["偏鄉醫療", "頭頸部超音波", "腹部超音波", "內科", "健康檢查", "家醫"],
+        tags: ["無症狀", "腹部不適", "全身健檢"],
     },
     {
         title: "慢性咳嗽的診斷邏輯：不是所有的咳都來自肺部",
@@ -79,7 +79,7 @@ export const posts: Post[] = [
         category: "內科疑難雜症",
         readTime: "6 min read",
         slug: "2026-03-03-chronic-cough",
-        tags: ["慢性咳嗽", "胃食道逆流", "鼻竇炎", "內科", "家醫", "咳嗽"],
+        tags: ["慢性咳嗽", "久咳不癒", "喉嚨卡卡", "喉嚨異物感"],
     }
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
