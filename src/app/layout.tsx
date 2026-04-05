@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_TC } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const notoSansTC = Noto_Sans_TC({
@@ -36,9 +37,12 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           <header className="bg-[#1A2B3C] text-white py-6 px-8 shadow-md">
             <div className="max-w-5xl mx-auto flex justify-between items-center">
-              <div>
-                <h1 className="text-2xl font-bold tracking-wide">你的專屬醫療智庫｜陳政良醫師</h1>
-                <p className="text-sm opacity-80 mt-1">從內外科臨床到公衛實證，為您量身打造的健康策略</p>
+              <div className="flex items-center gap-4">
+                <Image src="/images/logo.png" alt="Dr. Chen Logo" width={56} height={56} className="h-14 w-auto object-contain" priority />
+                <div>
+                  <h1 className="text-2xl font-bold tracking-wide">你的專屬醫療智庫｜陳政良醫師</h1>
+                  <p className="text-sm opacity-80 mt-1">從內外科臨床到公衛實證，為您量身打造的健康策略</p>
+                </div>
               </div>
               <nav className="space-x-6">
                 <a href="/" className="hover:text-blue-200 transition-colors">首頁</a>
