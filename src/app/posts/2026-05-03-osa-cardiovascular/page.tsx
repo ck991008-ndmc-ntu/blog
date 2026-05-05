@@ -54,7 +54,7 @@ export default function BlogPost() {
                                 </li>
                                 <li>
                                     <a href="https://doi.org/10.5664/jcsm.9592" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors hover:underline">
-                                        AASM (2025). Clinical Practice Guideline for Surgical Referral for Adults with OSA. <em>Journal of Clinical Sleep Medicine.</em>
+                                        Kent D, et al. (2021). Referral of Adults with Obstructive Sleep Apnea for Surgical Consultation: An AASM Clinical Practice Guideline. <em>J Clin Sleep Med.</em>
                                     </a>
                                 </li>
                             </ul>
