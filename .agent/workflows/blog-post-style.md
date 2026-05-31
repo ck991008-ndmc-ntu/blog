@@ -34,6 +34,8 @@ description: Blog post writing style guidelines for Dr. Chen's medical blog
 
 ## 6. 專業名詞與文獻引用的自然化 (Natural Integration of Evidence)
 - **作為輔助而非主體**：除了開頭置頂的 Reference，內文引用指引時請把它當作「補充說明」自然融入文章中（如：「在最新的醫學指引中，其實也證實了我們在門診的觀察：...」），保持閱讀的流暢度。
+- **藥名標記規範**：所有文章中出現的藥物名稱（不論是學名或商品名），如使用中文藥名，必須一律加上括號加註其英文原文（例如：「翠普登類 (Triptans)」、「立平妥 (Lipitor)」），以利讀者查詢並展現專業性。
+
 
 ## 7. 嚴格禁止使用 Emoji Icon (No Emojis)
 - 撰寫任何部落格文章時，**請勿在文章內容、流程圖或表格中使用任何 Emoji icon**（例如 🧠❤️⚖️🚗⚠️📋🏥💡🎯✅😴❌💊🔧📌🔬 等）。
