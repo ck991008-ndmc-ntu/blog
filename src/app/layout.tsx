@@ -47,7 +47,7 @@ export default function RootLayout({
               <nav className="space-x-6">
                 <a href="/" className="hover:text-blue-200 transition-colors">首頁</a>
                 <a href="/about" className="hover:text-blue-200 transition-colors">關於我</a>
-                <a href="/walkthrough" className="hover:text-blue-200 transition-colors font-medium border-l border-white/30 pl-6 text-green-300">開發驗證報告</a>
+
               </nav>
             </div>
           </header>
