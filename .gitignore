@@ -43,3 +43,6 @@ next-env.d.ts
 .vercel
 
 temp_blog/
+
+# Google Drive temp files
+.tmp.driveupload/
